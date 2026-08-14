@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800" role="img" aria-label="Serum application close-up">
+  <defs>
+    <linearGradient id="base" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0%" stop-color="#f0dcc8" />
+      <stop offset="55%" stop-color="#e2bfa2" />
+      <stop offset="100%" stop-color="#c99a79" />
+    </linearGradient>
+    <filter id="soften" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="57" />
+    </filter>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" seed="1967" />
+      <feColorMatrix type="saturate" values="0" />
+      <feComponentTransfer><feFuncA type="linear" slope="0.09" /></feComponentTransfer>
+    </filter>
+  </defs>
+  <rect width="800" height="800" fill="url(#base)" />
+  <g filter="url(#soften)">
+      <circle cx="654" cy="616" r="545" fill="#f0dcc8" opacity="0.64" />
+      <circle cx="70" cy="55" r="563" fill="#e2bfa2" opacity="0.36" />
+      <circle cx="464" cy="353" r="553" fill="#c99a79" opacity="0.31" />
+      <circle cx="352" cy="272" r="447" fill="#f0dcc8" opacity="0.53" />
+      <circle cx="410" cy="736" r="379" fill="#e2bfa2" opacity="0.58" />
+  </g>
+  <rect width="800" height="800" filter="url(#grain)" />
+  <rect width="800" height="800" fill="#22261b" opacity="0.04" />
+</svg>

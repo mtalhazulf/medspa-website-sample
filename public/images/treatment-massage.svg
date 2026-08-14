@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800" role="img" aria-label="Relaxing facial massage">
+  <defs>
+    <linearGradient id="base" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0%" stop-color="#eef2e6" />
+      <stop offset="55%" stop-color="#d9e2cf" />
+      <stop offset="100%" stop-color="#b4c1a5" />
+    </linearGradient>
+    <filter id="soften" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="57" />
+    </filter>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" seed="2944" />
+      <feColorMatrix type="saturate" values="0" />
+      <feComponentTransfer><feFuncA type="linear" slope="0.09" /></feComponentTransfer>
+    </filter>
+  </defs>
+  <rect width="800" height="800" fill="url(#base)" />
+  <g filter="url(#soften)">
+      <circle cx="608" cy="417" r="461" fill="#eef2e6" opacity="0.58" />
+      <circle cx="507" cy="94" r="541" fill="#d9e2cf" opacity="0.55" />
+      <circle cx="136" cy="206" r="391" fill="#b4c1a5" opacity="0.56" />
+      <circle cx="202" cy="254" r="574" fill="#eef2e6" opacity="0.32" />
+      <circle cx="231" cy="637" r="513" fill="#d9e2cf" opacity="0.28" />
+  </g>
+  <rect width="800" height="800" filter="url(#grain)" />
+  <rect width="800" height="800" fill="#22261b" opacity="0.04" />
+</svg>

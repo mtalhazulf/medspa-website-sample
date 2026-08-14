@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="700" viewBox="0 0 900 700" role="img" aria-label="Microneedling treatment">
+  <defs>
+    <linearGradient id="base" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0%" stop-color="#f3e3d8" />
+      <stop offset="55%" stop-color="#dcbfae" />
+      <stop offset="100%" stop-color="#b08d78" />
+    </linearGradient>
+    <filter id="soften" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="64" />
+    </filter>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" seed="5875" />
+      <feColorMatrix type="saturate" values="0" />
+      <feComponentTransfer><feFuncA type="linear" slope="0.09" /></feComponentTransfer>
+    </filter>
+  </defs>
+  <rect width="900" height="700" fill="url(#base)" />
+  <g filter="url(#soften)">
+      <circle cx="428" cy="88" r="347" fill="#f3e3d8" opacity="0.41" />
+      <circle cx="864" cy="373" r="506" fill="#dcbfae" opacity="0.28" />
+      <circle cx="743" cy="114" r="634" fill="#b08d78" opacity="0.52" />
+      <circle cx="547" cy="272" r="274" fill="#f3e3d8" opacity="0.46" />
+      <circle cx="144" cy="207" r="670" fill="#dcbfae" opacity="0.54" />
+  </g>
+  <rect width="900" height="700" filter="url(#grain)" />
+  <rect width="900" height="700" fill="#22261b" opacity="0.04" />
+</svg>
