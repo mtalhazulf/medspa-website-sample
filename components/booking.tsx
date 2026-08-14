@@ -80,10 +80,10 @@ export function Booking() {
             </div>
 
             <div>
-              <label className="field-label" htmlFor="treatment">
+              <label className="field-label" htmlFor="treatmentType">
                 Treatment Type
               </label>
-              <select id="treatment" name="treatment" className="field" defaultValue="" required>
+              <select id="treatmentType" name="treatment" className="field" defaultValue="" required>
                 <option value="" disabled>
                   Select a treatment
                 </option>
@@ -96,11 +96,11 @@ export function Booking() {
             </div>
 
             <div>
-              <label className="field-label" htmlFor="date">
+              <label className="field-label" htmlFor="preferredDate">
                 Date
               </label>
               <input
-                id="date"
+                id="preferredDate"
                 name="date"
                 type="date"
                 className="field"
@@ -110,10 +110,10 @@ export function Booking() {
             </div>
 
             <div>
-              <label className="field-label" htmlFor="time">
+              <label className="field-label" htmlFor="preferredTime">
                 Time
               </label>
-              <select id="time" name="time" className="field" defaultValue="" required>
+              <select id="preferredTime" name="time" className="field" defaultValue="" required>
                 <option value="" disabled>
                   Select a time
                 </option>
